@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply bg-ultramarine-700;
+  }
+  
+}
+
+/* Customize website's scrollbar like Mac OS
+Not supports in Firefox and IE */
+
+/* total width */
+*::-webkit-scrollbar {
+  @apply bg-white w-[8px];
+}
+
+/* background of the scrollbar except button or resizer */
+*::-webkit-scrollbar-track {
+  @apply bg-white;
+}
+
+/* scrollbar itself */
+*::-webkit-scrollbar-thumb {
+  @apply bg-[#babac0] rounded-xl border-[4px] border-white;
+}
+
+/* set button(top and bottom of the scrollbar) */
+*::-webkit-scrollbar-button {
+  @apply hidden;
+}
